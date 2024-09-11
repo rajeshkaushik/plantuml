@@ -1,3 +1,11 @@
+# running on local with Podman
+
+podman pull plantuml/plantuml-server:jetty
+
+podman run -d -p 8080:8080 plantuml/plantuml-server:jetty
+
+open http://localhost:8080
+
 # 🌱 PlantUML
 
 Generate UML diagrams from textual descriptions.
